@@ -1,0 +1,350 @@
+:root {
+    --primary-color: #df9797;
+    --second-color: #ffffff;
+    --third-color: #B9ADAD;
+    --fourth-color: #F2E5E5;
+    --text-color: #2B3A55;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',FontAwesome, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--text-color);
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: var(--text-color);
+}
+
+h4{
+    font-size: 20px;
+    color: var(--text-color);
+}
+h6 {
+    font-weight: 500;
+    font-size: 12px;
+}
+p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+#logoimg {
+    width: 10%;
+    
+}
+
+body {
+    width: 100%;
+}
+
+
+/* header start */
+#header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px var(--third-color);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar-frame {
+    width: 50%;
+    height: 10%;
+   
+    margin: auto 100px auto -300px;
+    
+}
+.searchbar {
+    border: 1px solid var(--third-color);
+    border-radius: 10px;
+    background-color: transparent;
+    
+    display: flex;
+    float: right;
+    height: 40px;
+    font-size: 20px;
+    align-items: baseline;
+    
+}
+.searchbar span, .searchbar input {
+    color: var(--text-color);
+    padding: 0.2rem 0.3rem;
+}
+
+.searchbar input {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    width: 50px;
+    -webkit-transition: width .35s ease-in;
+    transition: width .35s ease-in;
+}
+.searchbar input:focus {
+
+    width: 150px;
+    overflow: hidden;    
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  
+    
+}
+#navbar > li {
+    font-size: 16px;
+    display: flex;
+    margin: 1rem 1rem;
+    padding: 0 0.5rem;
+    position: relative;
+    
+}
+#navbar li a {
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+#navbar > li > a:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease; 
+}
+#navbar > li > a:hover,  #navbar > li > a.active{
+    color: var(--primary-color);
+}
+#navbar > li > a.active::after,  #navbar > li > a:hover::after{
+     content: "";
+     width: 30%;
+     height: 2px;
+     background: var(--primary-color);
+     position: absolute;
+     bottom: -4px;
+     left: 10px;
+}
+
+
+/* Homepage */
+#hero {
+    background-image: url(/image/Homepage/read.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 25vh 0;
+    text-align: center;
+}
+#hero h1, p {
+    color: var(--second-color);
+    text-shadow: var(--second-color);
+    padding: 1vh 0;
+}
+
+/*******DISCOVER BUTTON *********/
+#hero p,button {
+    font-size: 20px;
+}
+#hero button, #discover_btn button {
+    background-color: var(--fourth-color);
+    color: var(--text-color);
+    margin-top: 3vh;
+    padding: 2vh 6vh;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 3px 10px var(--text-color);
+}
+#hero button:hover, #discover_btn button:hover{
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    cursor: pointer;
+    padding: 2.5vh 6.5vh;
+    font-weight: 600;
+    transition: 0.3s;
+    ; 
+}
+/*******DISCOVER BUTTON *********/
+
+
+#features, #quotes {
+    padding: 3vh 0;
+    background-color: var(--fourth-color);
+    
+}
+#features h3 {
+    padding: 3vh 0;
+}
+
+/******** book *********/
+.fe-box-whole {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto; 
+}
+.fe-box h2{
+    margin: 4% 0 2% 2%;
+    text-shadow: 1px 1px 2px var(--text-color);
+    font-weight: 700; 
+    font-size: 30px;
+}
+.fe-box-container-book {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 2rem;
+    justify-content: space-around;
+}
+@media(max-width: 800px) {
+    .fe-box-container-book{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+
+    }
+}
+.fe-box-book {
+    width: 160px;
+    border: 1px solid black;
+}
+
+.author {
+    padding: 5px;
+}
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    overflow: wrap;
+
+}
+
+/******** book *********/
+
+/*******DISCOVER BUTTON *********/
+#discover_btn button {
+    display: block;
+    margin: 1vw auto;
+}
+/*******DISCOVER BUTTON *********/
+
+
+/*blockquote section */
+
+#quotes h2 {
+    text-align: center;
+    margin: 1vw 0; 
+}
+
+.quotes-box {
+    border: 1px solid black;
+    background-color: var(--primary-color);   
+    margin: 2vw 0;
+    
+   
+}
+.quotes-box div {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20vw;
+    right: 20vw;
+    
+   
+}
+.quotes-box div blockquote {
+    margin: 2vw 0;
+}
+
+.quotes-box div blockquote q {
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.quotes-box div blockquote h3 {
+    padding: 2vw 0;
+    text-align: right;
+}
+
+
+/*footer section */
+#footer .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    margin: 2vw 0;
+}
+.left-footer img {
+    width: 100px;
+}
+.left-footer ul li, .middle-footer ul li {
+    padding: 0.5rem 0;
+}
+.left-footer ul li, .middle-footer ul li {
+    list-style-type:none;
+}
+.left-footer ul li a, .middle-footer ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.right-footer-connect span a, .right-footer-contact span a {
+    background-color: var(--fourth-color);
+    color: var(---color);
+    opacity: 0.7;
+    font-size: 20px;
+    width: 100px !important; 
+    height: 100px !important;
+    margin: 0.2rem;
+    padding: 6px 8px;
+    position: inherit;
+    border-radius: 50%;    
+}
+
+/***** hover on footer icons ****/
+.hover:hover {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.hover-icon:hover {
+    background-color: var(--primary-color);
+    color: var(--fourth-color);
+    border-color:  var(--third-color);
+    transition: 0.3s ease;
+    
+}
+
+.right-footer-connect, .right-footer-contact, .middle-footer h3 {
+    margin-bottom: 1vw;
+}
+.right-footer-connect h3, .right-footer-contact h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+    
+}
+.right-footer-connect h3, .right-footer-contact h3, .middle-footer h3, .left-footer h3 {
+color: var(--primary-color);
+
+}
+
