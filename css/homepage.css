@@ -1,5 +1,3 @@
-
-
 /* Homepage */
 #hero {
     background-image: url(/image/Homepage/read.png);
@@ -51,8 +49,9 @@
 }
 
 /******** book *********/
+
 .fe-box-whole {
-    width: 90vw;
+    width: 80vw;
     height: auto;
     margin: 0 auto; 
 }
@@ -73,15 +72,10 @@
 }
 @media(max-width: 1100px) {
     .fe-box-container-book{
-        /*
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row; 
-        */
-
         display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
+        padding: 20px;
         justify-content:flex-start;
 
     }
@@ -93,7 +87,7 @@
     padding: 5px;
     cursor: pointer;
     box-shadow: 5px 5px 30px rgba(43, 58, 85, 0.2);
-    transition: 0.5s ease;
+    transition: 0.5s;
     border-radius: 5px;
     
 }
@@ -166,7 +160,7 @@
 @media (max-width: 799px){
 
     #mobile, #close {
-        display: inline;
+        display: inline !important;
         margin-left: 10px;
     }
     #mobile button {
@@ -174,25 +168,25 @@
         background-color: transparent;
     }
     #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        padding-top: 10vw;
-        right: -300px;
-        height:100vh;
-        width: 300px;
-        background-color: var(--fourth-color);
-        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
-        transition: .4s 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        position: fixed !important;
+        top: 0 !important; 
+        padding-top: 10vw !important;
+        right: -300px !important; 
+        height:100vh !important; 
+        width: 300px !important; 
+        background-color: var(--fourth-color) !important;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1) !important; 
+        transition: .4s !important;
     }
     #navbar.active {
-        right: 0;
+        right: 0 !important; 
     }
     #navbar.inactive {
-        right: 0;
+        right: 0 !important;
     }
     #close {
         position: absolute;

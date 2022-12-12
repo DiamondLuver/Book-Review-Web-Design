@@ -5,13 +5,20 @@
     --fourth-color: #F2E5E5;
     --text-color: rgb(43, 58, 85);
   }
+
 body {
 
     background-color: var(--fourth-color) !important;
+    
 }
+#g-btn {
+   width: 80vw;
+   margin: auto;
+}
+
 .genre-btn {
    font-size: 14px;
-   padding: 20px; 
+   margin: 5px; 
 
 }
 .btn-outline {
@@ -20,9 +27,9 @@ body {
     margin-top: 3vh;
     padding: 1vh 3vh;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    box-shadow: 1px 3px 10px var(--text-color);
+    box-shadow: 0.1px 0.1px 10px  rgba(43, 58, 85, 0.2);
     position: relative;
 }
 .btn-outline:hover {
@@ -35,8 +42,32 @@ body {
     z-index: 100; 
 }
 .btn-outline:focus {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
 
     background-color: white;
     color: var(--text-color);
+}
+
+.fe-box{
+    width: 80vw;
+    margin: auto;    
+}
+
+
+#pagination {
+    text-align: center;
+    margin: 30px;
+
+}
+#pagination a{
+    text-decoration: none;
+    background-color:var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
 }

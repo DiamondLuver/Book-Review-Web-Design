@@ -24,26 +24,30 @@
 
     <!-------------------HEADER------------------------>
     <section id="header">
-        <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
-        
-        <div id="navbar-frame">
-            <ul id="navbar">
-                <li><a  href="homepage.html">Home</a></li>
-                <li><a class="active" href="">Genre</a></li>
-                <li><a href="">For Children</a></li>
-                <li><a href="genre.html#footer">Contact</a></li>
-                <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
-            </ul>
-        </div>
-        <div class="searchbar">
-            <span class="fa fa-search"></span>
-            <input type="text" name="search" placeholder="Search">
-            
-       
-        </div>
-
+      <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
       
-    </section>
+      <div id="navbar-frame">
+        <ul id="navbar">
+            <li><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="genre.html">Genre</a></li>
+            <li><a href="genre.html#g_children">For Children</a></li>
+            <li><a href="homepage.html#contact">Contact</a></li>
+            <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
+            <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </ul>
+      </div>
+    
+      <div class="searchbar">
+          <span class="fa fa-search"></span>
+          <input type="text" name="search" placeholder="Search">
+      </div>
+      
+      <div id="mobile">
+      <button><i id="bar" class="fa fa-outdent" ></i></button>
+      </div>
+
+   
+  </section>
     <!--------------------END OF HEADER-------------------->
 
 
@@ -51,7 +55,7 @@
 
 
 
-    <section>
+    <section  class="section-p1">
       <div id="g-btn">
         <button type="button" class="genre-btn btn-outline" id="g-nonfiction">Nonfiction</button>
         <button type="button" class="genre-btn btn-outline" id="g-fiction">Fiction</button>
@@ -67,10 +71,11 @@
         <button type="button" class="genre-btn btn-outline" id="g-english">English</button>
         <button type="button" class="genre-btn btn-outline" id="g-khmer">Khmer</button>
       </div>
+    </section>
 
-
-      <div class="fe-box" id="top-rated">
-        <h2>Top Rated</h2>
+    <section id="books" class="section-p1">
+      <div class="fe-box" id="genre">
+        <h2>Popular</h2>
         <div class="fe-box-container-book">
           <div class="fe-box-book 1">
             <img src="/image/Homepage/book-cover-template.png">
@@ -133,16 +138,18 @@
           </div>
         </div>
       </div>
+    </section>
 
-  
-  
-    </div>
+    <section id="pagination" class="section-p1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fal fa-long-arrow-right"></i></a>
 
     </section>
     
 
     <!------------------FOOTER------------------>
-    <section id="footer">
+    <section id="footer" class="section-p1">
         <div class="footer-box">
           <div class="left-footer">
             <ul>
@@ -177,9 +184,10 @@
   
           </div>
         </div>
-      </section>
-      <!------------------END OF FOOTER------------------>
+    </section>
+    <!------------------END OF FOOTER------------------>
   
-  
+    <script type="text/javascript" src="/js/homepage.js">
+    </script>
     </body>
   </html>
