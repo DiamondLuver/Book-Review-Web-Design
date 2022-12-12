@@ -3,17 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, scale=1.0" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="/css/homepage.css" rel="stylesheet"/>
 
     <!--only support icon from fontawesome v.4-->
     <link href="/font/fontawesome/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-    <!--
-    <link href="/font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/fontawesome.css" rel="stylesheet">
-    <link href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
-    <link href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/v4-font-face.css">
-    -->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
     
     <title>
       Gnek - Homepage
@@ -21,26 +18,66 @@
    
   </head>
   <body>
+    <!-- JavaScript Bundle with Popper -->
+
 
     <!-------------------HEADER------------------------>
     <section id="header">
         <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
         
         <div id="navbar-frame">
-            <ul id="navbar">
+          <ul id="navbar">
+              <li><a class="active" href="homepage.html">Home</a></li>
+              <li><a href="genre.html">Genre</a></li>
+              <li><a href="genre.html">For Children</a></li>
+              <li><a href="homepage.html#contact">Contact</a></li>
+              <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
+              <a href="#" id="close"><i class="fa fa-times"></i></a>
+          </ul>
+        </div>
+      
+        <div class="searchbar">
+            <span class="fa fa-search"></span>
+            <input type="text" name="search" placeholder="Search">
+        </div>
+        
+        <div id="mobile">
+        <button><i id="bar" class="fa fa-outdent" ></i></button>
+        </div>
+
+      
+        
+
+        <!--
+       
+
+        <div id="mobile">
+          <button class="btn btn-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa fa-outdent" id="bar"></i></button>
+
+          <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul id="nav-offcanva navbar">
                 <li><a class="active" href="homepage.html">Home</a></li>
                 <li><a href="genre.html">Genre</a></li>
                 <li><a href="genre.html">For Children</a></li>
                 <li><a href="homepage.html#contact">Contact</a></li>
                 <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
-            </ul>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="searchbar">
-            <span class="fa fa-search"></span>
-            <input type="text" name="search" placeholder="Search">
-            
-       
-        </div>
+
+        
+
+
+      -->
+
+
+
 
       
     </section>
@@ -266,13 +303,12 @@
 
 
 
-
     <!------------------QUOTES------------------>
-    <section id="quotes">
+    <section id="quotes">  
       <h2>Quotes</h2>
       <div class="quotes-box">
         <div>
-          <img src="/img/jk-rowling.png">
+          <img src="/image/Homepage/read.png" width="100px">
           <blockquote>
             <q>If you don't like to read, you haven't found the right book.</q>
             <h3><address>JK Rowling</address></h3>
@@ -284,8 +320,7 @@
       </div>
     </section>
     <!------------------END OF QUOTES------------------>
-
-
+    
 
     <!------------------FOOTER------------------>
     <section id="footer">
@@ -326,6 +361,7 @@
     </section>
     <!------------------END OF FOOTER------------------>
 
-
+    <script type="text/javascript" src="/js/homepage.js">
+    </script>
   </body>
 </html>

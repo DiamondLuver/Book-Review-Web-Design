@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #df9797;
+    --second-color: #ffffff;
+    --third-color: #B9ADAD;
+    --fourth-color: #F2E5E5;
+    --text-color: rgb(43, 58, 85);
+  }
+body {
+
+    background-color: var(--fourth-color) !important;
+}
+.genre-btn {
+   font-size: 14px;
+   padding: 20px; 
+
+}
+.btn-outline {
+    background-color: var(--second-color);
+    color: var(--text-color);
+    margin-top: 3vh;
+    padding: 1vh 3vh;
+    font-weight: 300;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 3px 10px var(--text-color);
+    position: relative;
+}
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    position: inherit;
+    z-index: 100; 
+}
+.btn-outline:focus {
+    border: 1px solid var(--primary-color);
+
+    background-color: white;
+    color: var(--text-color);
+}
