@@ -7,6 +7,7 @@
     <link href="/css/bookview.css" rel="stylesheet"/>
     <link href="/css/genre.css" rel="stylesheet"/>
     <link href="/css/become-partner.css" rel="stylesheet"/>
+    <link href="/css/default_header_footer.css" rel="stylesheet"/>
 
     <!--only support icon from fontawesome v.4-->
     <link href="/font/fontawesome/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -27,31 +28,145 @@
 
     <!-------------------HEADER------------------------>
     <section id="header">
-        <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
-        
-        <div id="navbar-frame">
-            <ul id="navbar">
-                <li><a class="active" href="homepage.html">Home</a></li>
-                <li><a href="">Genre</a></li>
-                <li><a href="">For Children</a></li>
-                <li><a href="homepage.html#contact">Contact</a></li>
-                <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
-            </ul>
-        </div>
-        <div class="searchbar">
-            <span class="fa fa-search"></span>
-            <input type="text" name="search" placeholder="Search">
-            
-       
-        </div>
-
+      <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
       
+      <div id="navbar-frame">
+        <ul id="navbar">
+            <li><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="genre.html">Genre</a></li>
+            <li><a href="genre.html#g_children">For Children</a></li>
+            <li><a href="homepage.html#contact">Contact</a></li>
+            <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
+            <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </ul>
+      </div>
+    
+      <div class="searchbar">
+          <span class="fa fa-search"></span>
+          <input type="text" name="search" placeholder="Search">
+      </div>
+      
+      <div id="mobile">
+      <button><i id="bar" class="fa fa-outdent" ></i></button>
+      </div>
+
+       
     </section>
     <!--------------------END OF HEADER-------------------->
 
 
-    <!-------------YOUR CODE HERE------------->
 
+    <!-------------YOUR CODE HERE------------->
+    <section id="become-partner">
+      <div id="description">
+        <h1 style="color: #fff;" align="center">BECOME OUR SHOP's PARTNER</h1><br>
+        <h3 style="color: #fff;" align="center">If you become our partner, You'll get to many DISCOUNT from <span style="color: #fec107;">20% - 50%</span><br>and many more offer. THANKS</h3>
+      </div>
+      
+      
+      <div class="wrapper">
+        <div class="title">
+          Become Our Partner
+        </div>
+
+        <div class="form">
+          <div class="inputfield">
+              <label class="required">Shop Name </label>
+              <input type="text" class="input" required>
+          </div>  
+          <div class="inputfield">
+              <label class="required">First Name </label>
+              <input type="text" class="input" required>
+          </div>  
+          <div class="inputfield">
+              <label class="required">Last Name </label>
+              <input type="text" class="input" required>
+          </div>  
+          <div class="inputfield">
+              <label class="required">Email </label>
+              <input type="email" class="input" required>
+          </div> 
+          <div class="inputfield">
+            <label class="required">Gender </label>
+            <div class="custom_select" required>
+              <select>
+                <option value="none" select disabled hidden>select an option</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+          </div> 
+          <div class="inputfield">
+            <label  class="required">Shop Address </label required>
+            <input type="text" class="input">
+          </div> 
+          <div class="inputfield">
+            <label class="required">Phone Number </label required>
+            <input type="number" class="input">
+          </div> 
+          <div class="inputfield">
+            <label>More Information </label>
+            <textarea class="textarea"></textarea>
+          </div> 
+          <div class="inputfield">
+            <label>Discount Code </label>
+            <input type="text" class="input">
+          </div> 
+          <div class="inputfield terms">
+            <label class="check">
+              <input type="checkbox" required>
+              <span class="checkmark"></span>
+            </label>
+            <p  class="required">Agreed to become gnek partner shop</p>
+          </div> 
+          <div class="inputfield">
+            <input type="submit" value="GET STARTED" class="btn">
+          </div>
+          <div class="inputfield">
+            <img src="../image/page.PNG" class="img2">
+          </div>
+        </div>
+    </section>
+
+
+
+    <section id="instruction">
+      <div class="title">
+        Steps to Activation
+      </div>
+      <div class="step 1">
+        <div class="step-icon"><i class="fa fa-user"></i><i class=" fa fa-pencil"></i></div>
+        <div class="step-text">
+          <h4>Step 1</h4>
+          <h4></h4>
+        </div>
+      </div>
+
+      <div class="step 2">
+        <div class="step-icon"><i class="fa fa-book"></i></div>
+        <div class="step-text">
+          <h4>Step 2</h4>
+          <h4></h4>
+        </div>
+      </div>
+
+      <div class="step 3">
+        <div class="step-icon"><i class="fas fa-book"></i></div>
+        <div class="step-text">
+          <h4>Step 3</h4>
+          <h4></h4>
+        </div>
+      </div>
+
+      <div class="step 4">
+        <div class="step-icon"><i class="fa fa-user"></i><i class=" fa fa-pencil"></i></div>
+        <div class="step-text">
+          <h4>Step 4</h4>
+          <h4></h4>
+        </div>
+      </div>
+    </section>
 
     <!------------------FOOTER------------------>
     <section id="footer">
@@ -91,7 +206,9 @@
         </div>
       </section>
       <!------------------END OF FOOTER------------------>
-  
+      
+      <script type="text/javascript" src="/js/homepage.js">
+      </script>
   
     </body>
   </html>

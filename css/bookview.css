@@ -1,0 +1,60 @@
+
+
+
+
+/*BOOK DESCRIPTION SECTION */
+#bookdetails {
+    width: 80vw;
+    margin: 10vh auto;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 220px auto;
+    gap: 10vh;
+}
+.g-book-img{
+    width: 200px;
+    border: 1px solid black;
+    
+}
+.b-details-left {
+    display: block;
+    padding: 1vh;
+    border: 1px solid black;
+
+}
+.g-btn {
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    
+}
+.g-btn-col .btn-outline {
+    margin: 3px;
+    padding: 1vh 1vh;
+    font-weight: 200; 
+}
+.b-detail-right-body-description p {
+    text-align: justify;
+}
+
+
+/*SECTION AVAILABLE STORE */
+#avail-book-store {
+    width: 80vw;
+    margin: 5vh auto;
+    
+
+}
+.box-store {
+
+    display: grid;
+    grid-template-columns: 12vw 50vw auto;
+    gap: 5vh;
+    margin: 5vh;
+    background-color: var(--fourth-color)
+}
+.store-img {
+    width: 12vw;
+    
+
+}

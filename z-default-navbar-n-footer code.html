@@ -7,6 +7,7 @@
     <link href="/css/bookview.css" rel="stylesheet"/>
     <link href="/css/genre.css" rel="stylesheet"/>
     <link href="/css/become-partner.css" rel="stylesheet"/>
+    <link href="/css/default_header_footer.css" rel="stylesheet"/>
 
     <!--only support icon from fontawesome v.4-->
     <link href="/font/fontawesome/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -27,26 +28,31 @@
 
     <!-------------------HEADER------------------------>
     <section id="header">
-        <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
-        
-        <div id="navbar-frame">
-            <ul id="navbar">
-                <li><a href="homepage.html">Home</a></li>
-                <li><a class="active" href="">Genre</a></li>
-                <li><a href="">For Children</a></li>
-                <li><a href="homepage.html#contact">Contact</a></li>
-                <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
-            </ul>
-        </div>
-        <div class="searchbar">
-            <span class="fa fa-search"></span>
-            <input type="text" name="search" placeholder="Search">
-            
-       
-        </div>
-
+      <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
       
+      <div id="navbar-frame">
+        <ul id="navbar">
+            <li><a class="active" href="homepage.html">Home</a></li>
+            <li><a href="genre.html">Genre</a></li>
+            <li><a href="genre.html#g_children">For Children</a></li>
+            <li><a href="homepage.html#contact">Contact</a></li>
+            <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
+            <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </ul>
+      </div>
+    
+      <div class="searchbar">
+          <span class="fa fa-search"></span>
+          <input type="text" name="search" placeholder="Search">
+      </div>
+      
+      <div id="mobile">
+      <button><i id="bar" class="fa fa-outdent" ></i></button>
+      </div>
+
+       
     </section>
+    <!--------------------END OF HEADER-------------------->
     <!--------------------END OF HEADER-------------------->
 
 
@@ -91,7 +97,9 @@
         </div>
       </section>
       <!------------------END OF FOOTER------------------>
-  
+      
+      <script type="text/javascript" src="/js/homepage.js">
+      </script>
   
     </body>
   </html>
