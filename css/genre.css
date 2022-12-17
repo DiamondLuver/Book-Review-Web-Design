@@ -43,7 +43,11 @@ body {
 }
 .btn-outline:focus {
     border: 2px solid var(--primary-color);
-
+    background-color: white;
+    color: var(--text-color);
+}
+.focus_child{
+    border: 2px solid var(--primary-color);
     background-color: white;
     color: var(--text-color);
 }
