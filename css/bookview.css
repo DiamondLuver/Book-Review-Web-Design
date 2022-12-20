@@ -1,27 +1,85 @@
 /*BOOK DESCRIPTION SECTION */
+
 #bookdetails {
     width: 70vw;
     margin: 10vh auto;
     border: 1px solid black;
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-areas: 'img header header header star. ' 
+                        'img body body body body.';
     
+}
+.b-detail-img {
+    grid-area: img;
+}
+.b-detail-header {
+    grid-area: header;
+}
+.b-detail-body {
+    grid-area: body;
+}
+.rated-star {
+    grid-area: star;
+    margin: 20px;
+}
+/*rated */
+
+#bookdetails .rated-star i {
+    color: var(--star-color);
+    font-size: 20px;
+}
+@media (max-width:1100px){
+    /*BOOK DESCRIPTION*/
+    .b-detail-img .g-book-img{
+        width: 150px;
+    }
+    .b-detail-header .view-title {
+        font-size: 30px;
+        margin: 0;
+    }
+    #bookdetails {
+        width: 90vw;
+        grid-template-areas: 'img header header . . ' 
+                            'img star . . .'
+                            'body body body body.';
+    }
 }
 .g-book-img{
-    width: 200px;
-    border: 1px solid black;
-    
-}
-.b-details-left {
-    display: block;
-    padding: 1vh;
-    border: 1px solid black;
+    width: 250px;  
 
 }
+
+.view-author {
+    font-style: italic;
+}
+.b-detail-header > h2{
+    margin: 30px 0;
+    font-size: 35px;
+}
+.b-detail-header > h2 > a{
+    text-decoration: none;
+    color:inherit;
+    opacity: .5;
+    font-size: 30px;
+    
+}
+#more {display: none;}
+#myBtn {     /*readmore*/
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    font-weight: 600;
+}
+#myBtn:hover {     /*readmore*/
+    cursor: pointer;
+    background-color: transparent;
+    font-size: inherit;
+}
+
 .g-btn {
     display: inline-flex;
     flex-wrap: wrap;
-    
+    margin: 10px 30px;
     
 }
 .g-btn-col .btn-outline {
@@ -29,10 +87,10 @@
     padding: 1vh 1vh;
     font-weight: 200; 
 }
-.b-detail-right-header, .b-detail-right-body {
+.b-detail-header, .b-detail-body {
     margin: 1vw 3vw;
 }
-.b-detail-right-body-description p {
+.b-detail-body-description p {
     text-align: justify;
 }
 
@@ -47,6 +105,7 @@
     text-shadow: 1px 1px 2px var(--text-color);
     font-weight: 700; 
     font-size: 30px;
+    margin: 0 30px;
 }
 
 .box-container-store{
@@ -101,6 +160,10 @@
 }
 @media (max-width:1100px){
 
+
+    /*BOOK DESCRIPTION*/
+
+
     .box-store .store-img {
         grid-area: img;
     }
@@ -120,10 +183,28 @@
 }
 
 /* STAR RATING */
-
+#rated {
+    background-color: var(--second-color);
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-shadow: 0.1px 0.1px 10px  rgba(43, 58, 85, 0.2);
+}
+.rated-box h4 {
+    width: 50%;
+    
+}
 .rate {
-    height: 46px;
+    width: auto;
+    margin-top: -40px;
+    margin-right: -30px;
+    height: 60px;
     padding: 0 10px;
+    position: absolute;
+    right: 20%;
+    border-radius: 10px;
+    background-color: var(--fourth-color);
+
 }
 .rate:not(:checked) > input {
     position:absolute;
@@ -131,12 +212,12 @@
 }
 .rate:not(:checked) > label {
     top: -500px;
-    float:right;
+    float: right;
     width:1em;
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:30px;
+    font-size: 40px;
     color:#ccc;
 }
 .rate:not(:checked) > label:before {
@@ -145,7 +226,7 @@
     margin: 5px;
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+    color: #ffc700; 
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {

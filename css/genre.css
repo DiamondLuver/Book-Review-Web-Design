@@ -12,8 +12,10 @@ body {
     
 }
 #g-btn {
-   width: 80vw;
+   width: 75vw;
    margin: auto;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .genre-btn {
@@ -41,15 +43,14 @@ body {
     position: inherit;
     z-index: 100; 
 }
-.btn-outline:focus {
-    border: 2px solid var(--primary-color);
-    background-color: white;
-    color: var(--text-color);
+.checkbox input[type="checkbox"]:checked ~label{
+    border: 3px solid var(--primary-color);
 }
-.focus_child{
-    border: 2px solid var(--primary-color);
-    background-color: white;
-    color: var(--text-color);
+input[type="checkbox"]{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+
 }
 
 .fe-box{
@@ -74,4 +75,9 @@ body {
 #pagination a i{
     font-size: 16px;
     font-weight: 600;
+}
+#pagination .btn-pagination:hover{
+    background-color:var(--second-color);
+    color: var(--text-color);
+    transition: .3s;
 }

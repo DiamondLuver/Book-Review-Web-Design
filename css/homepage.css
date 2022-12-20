@@ -2,7 +2,6 @@
 #hero {
     background-image: url(/image/Homepage/read.png);
     height: 90vh;
-    width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
     padding: 25vh 0;
@@ -34,7 +33,7 @@
     padding: 2.5vh 6.5vh;
     font-weight: 600;
     transition: 0.3s;
-    ; 
+
 }
 /*******DISCOVER BUTTON *********/
 
@@ -92,18 +91,21 @@
     
 }
 .fe-box-book:hover {
-    width: 175px;
     box-shadow: 5px 5px 30px rgba(43, 58, 85, 0.6);
 
 }
 .author {
-    padding: 5px;
+    padding: 5px !important;
+    text-align: left;
 }
 .title {
-    font-size: 16px;
-    font-weight: 700;
-    overflow: wrap;
-    padding: 5px;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    overflow: wrap !important;
+    padding: 5px !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+
 
 }
 
@@ -155,48 +157,7 @@
     text-align: right;
 }
 
-
-
-@media (max-width: 799px){
-
-    #mobile, #close {
-        display: inline !important;
-        margin-left: 10px;
-    }
-    #mobile button {
-        border: 0;
-        background-color: transparent;
-    }
-    #navbar {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
-        position: fixed !important;
-        top: 0 !important; 
-        padding-top: 10vw !important;
-        right: -300px !important; 
-        height:100vh !important; 
-        width: 300px !important; 
-        background-color: var(--fourth-color) !important;
-        box-shadow: 0 40px 60px rgba(0,0,0,0.1) !important; 
-        transition: .4s !important;
-    }
-    #navbar.active {
-        right: 0 !important; 
-    }
-    #navbar.inactive {
-        right: 0 !important;
-    }
-    #close {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: var(--text-color);
-        font-size: 24px;
-
-    }
-
-
-
+#slides {
+    width: 70%;
+    margin: auto auto;
 }

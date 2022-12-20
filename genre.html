@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, scale=1.0" />
     <link href="/css/homepage.css" rel="stylesheet"/>
-    <link href="/css/bookview.css" rel="stylesheet"/>
     <link href="/css/genre.css" rel="stylesheet"/>
     <link href="/css/default_header_footer.css" rel="stylesheet"/>
 
@@ -56,19 +55,74 @@
 
     <section  class="section-p1">
       <div id="g-btn">
-        <button type="button" class="genre-btn btn-outline" id="g-nonfiction">Nonfiction</button>
-        <button type="button" class="genre-btn btn-outline" id="g-fiction">Fiction</button>
-        <button type="button" class="genre-btn btn-outline" id="g-romance">Romance</button>
-        <button type="button" class="genre-btn btn-outline" id="g-sci_fi_n_fantasy">Sci-fi & Fantasy</button>
-        <button type="button" class="genre-btn btn-outline" id="g-business">Business</button>
-        <button type="button" class="genre-btn btn-outline" id="g-lifestyle_n_sports">Lifestyle & Sports</button>
-        <button type="button" class="genre-btn btn-outline" id="g-classic">Classic</button>
-        <button type="button" class="genre-btn btn-outline" id="g-self_help">Self-help</button>
-        <button type="button" class="genre-btn btn-outline" id="g-children">Children</button>
-        <button type="button" class="genre-btn btn-outline" id="g-young_adult">Young Adult</button>
-        <button type="button" class="genre-btn btn-outline" id="g-historical">Historical</button>
-        <button type="button" class="genre-btn btn-outline" id="g-english">English</button>
-        <button type="button" class="genre-btn btn-outline" id="g-khmer">Khmer</button>
+        <div class="checkbox">
+          <input type="checkbox" name ="genre1" value="Nonfiction" id="g-nonfiction">
+          <label class="genre-btn btn-outline" for="g-nonfiction">Nonfiction</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre2" value="Fiction" id="g-fiction">
+          <label class="genre-btn btn-outline" for="g-fiction">Fiction</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre3" value="Romance" id="g-romance">
+          <label class="genre-btn btn-outline" for="g-romance">Romance</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre4" value="Sci-fi_&_Fantasy" id="g-sci_fi_n_fantasy">
+          <label class="genre-btn btn-outline" for="g-sci_fi_n_fantasy">Sci-fi & Fantasy</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre5" value="Business" id="g-business">
+          <label class="genre-btn btn-outline" for="g-business">Business</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre6" value="Lifestyle_&_Sports" id="g-lifestyle_sports">
+          <label class="genre-btn btn-outline" for="g-lifestyle_sports">Lifestyle & Sports</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre7" value="Classic" id="g-classic">
+          <label class="genre-btn btn-outline" for="g-classic">Classic</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre8" value="Self-help" id="g-self_help">
+          <label class="genre-btn btn-outline" for="g-self_help">Self-help</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre9" value="Children" id="g-children">
+          <label class="genre-btn btn-outline" for="g-children">Children</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre10" value="Young_Adult" id="g-young_adult">
+          <label class="genre-btn btn-outline" for="g-young_adult">Young Adult</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre11" value="Historical" id="g-historical">
+          <label class="genre-btn btn-outline" for="g-historical">Historical</label>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre12" value="English" id="g-english">
+          <label class="genre-btn btn-outline" for="g-english">English</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" class="checkbox" name ="genre13" value="Khmer" id="g-khmer">
+          <label class="genre-btn btn-outline" for="g-khmer">Khmer</label>
+        </div>
+
+          
+
+          
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </section>
 
@@ -140,9 +194,9 @@
     </section>
 
     <section id="pagination" class="section-p1">
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#"><i class="fal fa-long-arrow-right"></i></a>
+      <a class="btn-pagination" href="#">1</a>
+      <a class="btn-pagination" href="#">2</a>
+      <a class="btn-pagination" href="#"><i class="fal fa-long-arrow-right"></i></a>
 
     </section>
     
@@ -188,5 +242,6 @@
   
     <script type="text/javascript" src="/js/homepage.js">
     </script>
+    <script type="text/javascript" src="/js/genre.js"></script>
     </body>
   </html>

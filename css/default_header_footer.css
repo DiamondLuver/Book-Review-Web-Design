@@ -26,12 +26,12 @@ h2 {
 }
 
 h4{
-    font-size: 20px;
-    color: var(--text-color);
+    font-size: 20px !important;
+    color: var(--text-color) !important;
 }
 h6 {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 500 !important;
+    font-size: 12px !important;
 }
 p {
     font-size: 16px;
@@ -40,22 +40,22 @@ p {
 
 #logoimg {
     width: 20%;
+    padding: 0;
+    float: left;
     
 }
 
-body {
-    width: 100%;
-}
+
 
 
 /* header start */
 #header {
     width: 100%;
-    height: 15%;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 70px;
+    justify-content: space-around;
+    padding: 0 10px;
     background-color: #fff;
     box-shadow: 0 5px 15px var(--third-color);
     z-index: 999;
@@ -65,7 +65,10 @@ body {
 }
 
 #navbar-frame {
+    width: 60%;
+    height: auto;
     margin: auto 100px auto -300px;
+
     
 }
 .searchbar {
@@ -81,7 +84,7 @@ body {
 }
 .searchbar span, .searchbar input {
     color: var(--text-color);
-    padding: 0.2rem 0.3rem;
+    
 }
 
 .searchbar input {
@@ -145,70 +148,113 @@ body {
 
 /*footer section */
 #footer {
-    background-color: var(--second-color);
+    width: 100%;
+    background-color: var(--second-color) !important;
 }
 #footer .footer-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 2vw;
-    padding: 2vw 0;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+    margin: 2vw auto !important;
+    padding: 2vw 0 !important;
 }
 .left-footer img {
-    width: 100px;
+    width: 100px !important;
 }
 .left-footer ul li, .middle-footer ul li {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 !important;
+    list-style-type:none !important;
 }
-.left-footer ul li, .middle-footer ul li {
-    list-style-type:none;
-}
-.middle-footer ul li {
-    margin-left: -35px;
-}
+
 .left-footer ul li a, .middle-footer ul li a {
-    text-decoration: none;
-    color: var(--text-color);
+    text-decoration: none !important;
+    color: var(--text-color) !important;
 }
 
 .right-footer-connect span a, .right-footer-contact span a {
-    background-color: var(--fourth-color);
-    color: var(---color);
-    opacity: 0.7;
-    font-size: 20px;
+    background-color: var(--fourth-color) !important;
+    color: var(---color)!important;
+    font-size: 20px !important;
     width: 100px !important; 
     height: 100px !important;
-    margin: 0.2rem;
-    padding: 6px 8px;
-    position: inherit;
-    border-radius: 50%;    
+    margin: 0.2rem !important;
+    padding: 6px 8px !important;
+    border-radius: 50% !important;    
 }
 
 /***** hover on footer icons ****/
 .hover:hover {
-    color: var(--primary-color);
-    font-weight: 500;
-    transition: 0.3s ease;
+    color: var(--primary-color) !important;
+    font-weight: 500 !important;
+    transition: 0.3s ease !important;
 }
 .hover-icon:hover {
-    background-color: var(--primary-color);
-    color: var(--fourth-color);
-    border-color:  var(--third-color);
-    transition: 0.3s ease;
+    background-color: var(--primary-color) !important;
+    color: var(--fourth-color) !important;
+    border-color:  var(--third-color) !important;
+    transition: 0.3s ease !important;
     
 }
 
 .right-footer-connect, .right-footer-contact, .middle-footer h3 {
-    margin-bottom: 1vw;
+    margin-bottom: 1vw !important;
 }
 .right-footer-connect h3, .right-footer-contact h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
     
     
 }
 .right-footer-connect h3, .right-footer-contact h3, .middle-footer h3, .left-footer h3 {
-color: var(--primary-color);
-font-size: 20px;
+    color: var(--primary-color) !important;
+    font-size: 20px !important;
+
+}
+
+
+
+
+
+@media (max-width: 1000px){
+
+    #mobile, #close {
+        display: inline !important;
+        margin-left: 10px;
+    }
+    #mobile button {
+        border: 0;
+        background-color: transparent;
+    }
+    #navbar {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        position: fixed !important;
+        top: 0 !important; 
+        padding-top: 10vw !important;
+        right: -300px !important; 
+        height:100vh !important; 
+        width: 300px !important; 
+        background-color: var(--fourth-color) !important;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1) !important; 
+        transition: .4s !important;
+    }
+    #navbar.active {
+        right: 0 !important; 
+    }
+    #navbar.inactive {
+        right: 0 !important;
+    }
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: var(--text-color);
+        font-size: 24px;
+
+    }
+
+
 
 }
