@@ -131,6 +131,7 @@ p {
 #navbar > li > a:hover,  #navbar > li > a.active{
     color: var(--primary-color);
 }
+
 #navbar > li > a.active::after,  #navbar > li > a:hover::after{
      content: "";
      width: 30%;

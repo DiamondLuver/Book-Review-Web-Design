@@ -143,7 +143,7 @@
     display: block;
   }
   
-  .wrapper .form .inputfield .btn{
+  .wrapper .form .inputfield .btn, #instruction .inputfield .btn {
     width: 100%;
      padding: 8px 10px;
     font-size: 15px; 
@@ -156,8 +156,9 @@
     outline: none;
   }
   
-  .wrapper .form .inputfield .btn:hover{
+  .wrapper .form .inputfield .btn:hover , #instruction .inputfield .btn:hover{
     background:  var(--text-color);
+    transition: .5s;
   }
   
   .wrapper .form .inputfield:last-child{
