@@ -10,7 +10,7 @@
   }
   
   html::-webkit-scrollbar-track {
-    background: #eee;
+    background: var(--second-color);
   }
   
   html::-webkit-scrollbar-thumb {
@@ -51,9 +51,8 @@ p {
 }
 
 #logoimg {
-    width: 10%;
+    width: 15%;
     padding: 0;
-    float: left;
 }
 
 
@@ -69,16 +68,16 @@ p {
     padding: 0 10px;
     background-color: #fff;
     box-shadow: 0 5px 15px var(--third-color);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
+    z-index: 999 !important;
+    position: sticky !important;
+
 }
 
 #navbar-frame {
-    width: 60%;
-    height: auto;
-    margin: auto 100px auto -300px;
+
+    width: 80% !important;
+    height: auto !important;
+    margin: auto 100px auto -300px !important;
 
     
 }
@@ -114,7 +113,7 @@ p {
 
 #navbar{
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
   
@@ -125,7 +124,7 @@ p {
     display: flex;
     margin: 1rem 0;
     padding: 0 1rem;
-    position: relative;
+
     
 }
 #navbar li a {
@@ -136,7 +135,7 @@ p {
 #navbar > li > a:hover{
     color: var(--primary-color);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.2s ease; 
 }
 #navbar > li > a:hover,  #navbar > li > a.active{
@@ -162,6 +161,7 @@ p {
 #footer {
     width: 100%;
     background-color: var(--second-color) !important;
+    
 }
 #footer .footer-box {
     display: flex !important;
