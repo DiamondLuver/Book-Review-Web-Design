@@ -9,6 +9,10 @@
     <link href="/css/default_header_footer.css" rel="stylesheet"/>
     <link href="/css/variable.css" rel="stylesheet"/>
 
+    <!--LOGO IN TITLE-->
+    <link href="/image/Homepage/logo.png" rel="icon">
+    <link href="/image/Homepage/logo.png" rel="apple-touch-icon">
+
     <!--only support icon from fontawesome v.4-->
     <link href="/font/fontawesome/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,32 +26,29 @@
 
     <!-------------------HEADER------------------------>
     <section id="header">
-      <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
+        <a href="homepage.html" ><img src="/image/Homepage/logo.png" id="logoimg" alt="logo"></a>
+        <div id="navbar-frame">
+          <ul id="navbar">
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="genre.html">Genre</a></li>
+              <li><a href="genre.html#g_children">For Children</a></li>
+              <li><a href="contact_pp.html">Contact</a></li>
+              <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
+              <a href="#" id="close"><i class="fa fa-times"></i></a>
+          </ul>
+        </div>
       
-      <div id="navbar-frame">
-        <ul id="navbar">
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="genre.html">Genre</a></li>
-            <li><a href="genre.html#g_children">For Children</a></li>
-            <li><a href="bookview.html#contact">Contact</a></li>
-            <li><a href=""><i class="fa fa-language"></i>  EN | KH</a></li>
-            <a href="#" id="close"><i class="fa fa-times"></i></a>
-        </ul>
-      </div>
-    
-      <div class="searchbar">
-          <span class="fa fa-search"></span>
-          <input type="text" name="search" placeholder="Search">
-      </div>
-      
+        <div class="searchbar">
+            <span class="fa fa-search"></span>
+            <input type="text" name="search" placeholder="Search">
+        </div>
+        
+        <div id="mobile">
+        <button><i id="bar" class="fa fa-outdent" ></i></button>
+        </div>
 
-      <!------DISPLAY MINIMIZE NAVBAR WHEN THE SCREEN IS SMALL------------>
-      <div id="mobile">
-      <button><i id="bar" class="fa fa-outdent" ></i></button>
-      </div>
-
-   
-  </section>
+     
+    </section>
     <!--------------------END OF HEADER-------------------->
 
     <section id="bookdetails" class="section-p1">
@@ -108,22 +109,22 @@
             </div>
             <div class="store-btn">
               <div class="store-btn-container">
-                <a href="" class="store-btn-btn" id="st-location"><i class="fa fa-location-arrow"></i></button>
+                <a href="https://goo.gl/maps/YPKc8NU8wH6FexV39" target="_blank" class="store-btn-btn" id="st-location"><i class="fa fa-location-arrow"></i></button>
                 Location</a>
               </div>
 
               <div class="store-btn-container">
-                <a href="" class="store-btn-btn" id="st-search"><i class="fa fa-search"></i></button>
+                <a href="https://www.google.com/search?q=Monument+Books%2C+Preah+Norodom+Blvd+(41)%2C+Phnom+Penh&oq=Monument+Books%2C+Preah+Norodom+Blvd+(41)%2C+Phnom+Penh&aqs=chrome..69i57j69i61j69i60.1371j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="store-btn-btn" id="st-search"><i class="fa fa-search"></i></button>
                 Search</a>
               </div>
 
               <div class="store-btn-container">
-                <a href=""class="store-btn-btn" id="st-website"><i class="fa fa-globe"></i></button>
+                <a href="https://www.facebook.com/monumentbooksandtoys/" target="_blank" class="store-btn-btn" id="st-website"><i class="fa fa-globe"></i></button>
                 Website</a>
               </div>
 
               <div class="store-btn-container">
-                <a href="" class="store-btn-btn" id="st-share"><i class="fa fa-share-alt"></i></button>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<URL>" class="store-btn-btn" id="st-share"><i class="fa fa-share-alt"></i></button>
                 Share</a>
               </div>
             </div>

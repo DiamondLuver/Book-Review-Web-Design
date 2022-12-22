@@ -5,6 +5,18 @@
     --fourth-color: #F2E5E5;
     --text-color: rgb(43, 58, 85);
   }
+  html::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #eee;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5rem;
+  }
 
 
 * {
@@ -39,7 +51,7 @@ p {
 }
 
 #logoimg {
-    width: 20%;
+    width: 10%;
     padding: 0;
     float: left;
 }

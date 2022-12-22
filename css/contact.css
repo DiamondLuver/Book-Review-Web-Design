@@ -13,50 +13,64 @@
   transition: all .2s linear;
 }
 
-html {
-  overflow-x: hidden;
-  font-size: 62.5%;
-}
-
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-  background: #eee;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: #0984e3;
-  border-radius: 5rem;
-}
-
-body {
-  background: #eee;
-}
-
-section {
-  padding: 3rem 9%;
-}
-
-.heading {
+#head-intro h1{
   text-align: center;
-  margin-bottom: 3rem;
-  font-size: 3.5rem;
-  color: #333;
+  margin: 5vh;
 }
 
-.heading span {
-  color: #0984e3;
+.info-container, .contact {
+  margin: 3rem ;
+
 }
+.info-container .box-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 1rem;
+}
+
+.info-container .box-container .box {
+
+  background: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  padding: 1rem;
+  
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.info-container .box-container .box i {
+  width: 70px;
+  height: 70px;
+  font-size: 30px !important;
+  color: var(--text-color) !important;
+  border-radius: 50%;
+  background: #0984e3;
+  color: #fff;
+}
+
+.info-container .box-container .box h1 {
+  color: var(--text-color) !important;
+  margin: .5rem 0;
+
+}
+
+.info-container .box-container .box p {
+  font-size: 20px !important;
+  color: var(--text-color) !important;
+  line-height: 2;
+}
+
 
 .btn {
   margin-top: 1rem;
   display: inline-block;
   border-radius: .5rem;
   padding: 1rem 3rem;
-  font-size: 1.7rem;
-  color: #fff;
+  font-size: 20px !important;
+  color: var(--text-color) !important;
+
   cursor: pointer;
   background: #0984e3;
 }
@@ -91,49 +105,6 @@ section {
 
 
 
-
-
-.info-container .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
-  gap: 2rem;
-}
-
-.info-container .box-container .box {
-  background: #fff;
-  border-radius: .5rem;
-  text-align: center;
-  padding: 2rem;
-  border: 0.2rem solid #333;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.info-container .box-container .box i {
-  height: 7.5rem;
-  width: 7.5rem;
-  line-height: 7.5rem;
-  font-size: 2.5rem;
-  border-radius: 50%;
-  margin-bottom: .5rem;
-  background: #0984e3;
-  color: #fff;
-}
-
-.info-container .box-container .box h3 {
-  font-size: 2rem;
-  padding: .5rem 0;
-  color: #333;
-}
-
-.info-container .box-container .box p {
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #666;
-}
-
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,15 +121,15 @@ section {
 }
 
 .contact form h3 {
-  font-size: 3rem;
+  font-size: 35px !important;
+  color: var(--text-color) !important;
   text-transform: uppercase;
-  color: #333;
   padding-bottom: 1rem;
 }
 
 .contact form p {
-  font-size: 1.5rem;
-  color: #666;
+  font-size: 15px !important;
+  color: var(--text-color) !important;
   padding: 1rem 0;
   line-height: 2;
 }
@@ -186,8 +157,8 @@ section {
   border: 0.2rem solid #333;
   background: #fff;
   text-transform: none;
-  color: #666;
-  font-size: 1.5rem;
+  font-size: 15px !important;
+  color: var(--text-color) !important;
   margin: .7rem 0;
 }
 
@@ -202,58 +173,4 @@ section {
       -ms-flex: 1 1 42rem;
           flex: 1 1 42rem;
   width: 100%;
-}
-
-.newsletter {
-  background: #0984e3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.newsletter .content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
-}
-
-.newsletter .content h3 {
-  font-size: 6rem;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.newsletter .content p {
-  font-size: 2.2rem;
-  color: #fff;
-}
-
-.newsletter form {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: .5rem;
-  border-radius: .5rem;
-}
-
-.newsletter form .email {
-  width: 100%;
-  padding: 0 1.4rem;
-  text-transform: none;
-  color: #666;
-  font-size: 1.6rem;
-}
-
-.newsletter form .btn {
-  margin-top: 0;
 }
