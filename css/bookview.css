@@ -1,12 +1,11 @@
 /*BOOK DESCRIPTION SECTION */
-
 #bookdetails {
     width: 70vw;
     margin: 10vh auto;
     border: 1px solid black;
     display: grid;
-    grid-template-areas: 'img header header header star. ' 
-                        'img body body body body.';
+    grid-template-areas: 'img header header header  star. ' 
+                         'img body   body body   body.';
     
 }
 .b-detail-img {
@@ -216,7 +215,7 @@
     width:1em;
     overflow:hidden;
     white-space:nowrap;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 40px;
     color:#ccc;
 }

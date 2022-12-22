@@ -1,0 +1,9 @@
+1. information books: name author description
+2. Bookstores : location link, search link, website(fb page link or website link) and share.
+
+
+Page html of Genre. 
+page html of Contact in navbar
+
+what to reasearch more:
+Search bar

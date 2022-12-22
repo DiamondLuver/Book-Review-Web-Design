@@ -11,6 +11,8 @@
     color: var(--second-color);
     text-shadow: var(--second-color);
     padding: 1vh 0;
+    text-decoration: solid;
+
 }
 
 /*******DISCOVER BUTTON *********/
@@ -161,3 +163,4 @@
     width: 70%;
     margin: auto auto;
 }
+
