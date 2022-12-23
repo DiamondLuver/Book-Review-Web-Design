@@ -8,9 +8,13 @@
     padding: 25vh 0;
     text-align: center;
 }
+#hero h1 {
+    text-shadow:  2px 2px 10px var(--primary-color);
+    font-weight: 600;
+}
 #hero h1, p {
-    color: var(--second-color);
-    text-shadow: var(--second-color);
+   
+    color: white;
     padding: 1vh 0;
     text-decoration: solid;
 
@@ -19,6 +23,7 @@
 /*******DISCOVER BUTTON *********/
 #hero p,button {
     font-size: 20px;
+    color: white;
 }
 #hero button, #discover_btn button {
     background-color: var(--fourth-color);
