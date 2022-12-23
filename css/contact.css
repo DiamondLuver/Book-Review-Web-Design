@@ -12,7 +12,7 @@ body {
   background-color: var(--fourth-color);
 }
 .info-container {
-  margin: 5vh auto;
+  margin: 200px auto;
 }
 .info-container h1{
   text-align: center;
@@ -170,4 +170,10 @@ body {
       -ms-flex: 1 1 42rem;
           flex: 1 1 42rem;
   width: 100%;
+}
+
+
+
+.middle-footer ul li {
+  margin-left: -10px !important;
 }

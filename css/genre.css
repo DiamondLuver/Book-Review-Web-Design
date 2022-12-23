@@ -13,7 +13,7 @@ body {
 }
 #g-btn {
    width: 75vw;
-   margin: auto;
+   margin: 100px auto;
    display: flex;
    flex-wrap: wrap;
 }
@@ -80,4 +80,8 @@ input[type="checkbox"]{
     background-color:var(--second-color);
     color: var(--text-color);
     transition: .3s;
+}
+
+.middle-footer ul li {
+    margin-left: -30px;
 }

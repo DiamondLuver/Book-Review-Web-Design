@@ -69,12 +69,14 @@ p {
     background-color: #fff;
     box-shadow: 0 5px 15px var(--third-color);
     z-index: 999 !important;
-    position: sticky !important;
+    overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
 }
 
 #navbar-frame {
-
     width: 80% !important;
     height: auto !important;
     margin: auto 100px auto -300px !important;
@@ -141,16 +143,14 @@ p {
 #navbar > li > a:hover,  #navbar > li > a.active{
     color: var(--primary-color);
 }
-
+/*
 #navbar > li > a.active::after,  #navbar > li > a:hover::after{
      content: "";
-     width: 30%;
      height: 2px;
      background: var(--primary-color);
-     position: absolute;
-     bottom: -4px;
-     left: 10px;
+
 }
+*/
 #mobile, #close {
     display: none;
 }

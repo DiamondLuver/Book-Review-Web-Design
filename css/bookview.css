@@ -2,7 +2,9 @@
 #bookdetails {
     width: 70vw;
     margin: 10vh auto;
-    border: 1px solid black;
+    border: 1px solid rgb(236, 202, 202);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    padding: 10px;
     display: grid;
     grid-template-areas: 'img header header header  star. ' 
                          'img body   body body   body.';
@@ -207,7 +209,7 @@
 }
 .rate:not(:checked) > input {
     position:absolute;
-    top:-9999px;
+    display: none;
 }
 .rate:not(:checked) > label {
     top: -500px;
